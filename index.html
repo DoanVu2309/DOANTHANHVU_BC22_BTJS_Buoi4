@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .column {
+        float: left;
+        width: 25%;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+      }
+
+      .containerTab {
+        padding: 20px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">Bài Tập Thêm JS Buổi 4</h1>
+    <!-- Four columns -->
+    <div class="row">
+      <div
+        class="column"
+        onclick="openTab('b1');"
+        style="background: green"
+        data-toggle="collapse"
+        data-target="#bt_1"
+      >
+        Bài Tập JS 1
+      </div>
+      <div
+        class="column"
+        onclick="openTab('b2');"
+        style="background: blue"
+        data-toggle="collapse"
+        data-target="#bt_2"
+      >
+        Bài Tập JS 2
+      </div>
+      <div
+        class="column"
+        onclick="openTab('b3');"
+        style="background: red"
+        data-toggle="collapse"
+        data-target="#bt_3"
+      >
+        Bài Tập JS 3
+      </div>
+      <div
+        class="column"
+        onclick="openTab('b4');"
+        style="background: yellow"
+        data-toggle="collapse"
+        data-target="#bt_4"
+      >
+        Bài Tập JS 4
+      </div>
+    </div>
+
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab" style="display: none; background: green">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 collapse" id="bt_1">
+              <button
+                class="btn btn-dark"
+                data-toggle="collapse"
+                data-target="#db_1"
+              >
+                Đề Bài Yêu Cầu
+              </button>
+              <button
+                class="btn btn-info"
+                data-toggle="collapse"
+                data-target="#xl_1"
+              >
+                Xử Lý Dữ Liệu
+              </button>
+              <button id="btn_KQ1" class="btn btn-success">
+                In Ra Kết Quả
+              </button>
+            </div>
+            <div class="col-12 mt-3 collapse" id="db_1">
+              <img
+                src="./img/screenshot_1.png"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt=""
+              />
+            </div>
+            <div class="col-12 mt-3 collapse" id="kq_1">
+              <div class="bg-light">
+                <div id="txtThongBao_1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 collapse" id="xl_1">
+          <div class="card border-primary">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Ngày cần nhập</label>
+                <input type="text" id="txt_nhapNgay" class="form-control" />
+                <label for="">Tháng cần nhập</label>
+                <input type="text" id="txt_nhapThang" class="form-control" />
+                <label for="">Năm cần nhập</label>
+                <input type="text" id="txt_nhapNam" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="b2" class="containerTab" style="display: none; background: blue">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 collapse" id="bt_2">
+              <button
+                class="btn btn-dark"
+                data-toggle="collapse"
+                data-target="#db_2"
+              >
+                Đề Bài Yêu Cầu
+              </button>
+              <button
+                class="btn btn-info"
+                data-toggle="collapse"
+                data-target="#xl_2"
+              >
+                Xử Lý Dữ Liệu
+              </button>
+              <button id="btn_KQ2" class="btn btn-success">
+                In Ra Kết Quả
+              </button>
+            </div>
+            <div class="col-12 mt-3 collapse" id="db_2">
+              <img
+                src="./img/screenshot_2.png"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt=""
+              />
+            </div>
+            <div class="col-12 mt-3">
+              <div class="bg-light">
+                <div id="txtThongBao_2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 collapse" id="xl_2">
+          <div class="card border-primary">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Tháng cần nhập</label>
+                <input type="text" id="txtNhapThang" class="form-control" />
+                <label for="">Năm cần nhập</label>
+                <input type="text" id="txtNhapNam" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="b3" class="containerTab" style="display: none; background: red">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 collapse" id="bt_3">
+              <button
+                class="btn btn-dark"
+                data-toggle="collapse"
+                data-target="#db_3"
+              >
+                Đề Bài Yêu Cầu
+              </button>
+              <button
+                class="btn btn-info"
+                data-toggle="collapse"
+                data-target="#xl_3"
+              >
+                Xử Lý Dữ Liệu
+              </button>
+              <button id="btn_KQ3" class="btn btn-success">
+                In Ra Kết Quả
+              </button>
+            </div>
+            <div class="col-12 mt-3 collapse" id="db_3">
+              <img
+                src="./img/screenshot_3.png"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt=""
+              />
+            </div>
+            <div class="col-12 mt-3">
+              <div class="bg-light">
+                <div id="txtThongBao_3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 collapse" id="xl_3">
+          <div class="card border-primary">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập số nguyên</label>
+                <input type="text" id="txt_soNguyen" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="b4" class="containerTab" style="display: none; background: yellow">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 collapse" id="bt_4">
+              <button
+                class="btn btn-dark"
+                data-toggle="collapse"
+                data-target="#db_4"
+              >
+                Đề Bài Yêu Cầu
+              </button>
+              <button
+                class="btn btn-info"
+                data-toggle="collapse"
+                data-target="#xl_4"
+              >
+                Xử Lý Dữ Liệu
+              </button>
+              <button id="btn_KQ4" class="btn btn-success">
+                In Ra Kết Quả
+              </button>
+            </div>
+            <div class="col-12 mt-3 collapse" id="db_4">
+              <img
+                src="./img/screenshot_4.png"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt=""
+              />
+            </div>
+            <div class="col-12 mt-3">
+              <div class="bg-light">
+                <div id="txtThongBao_4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 collapse" id="xl_4">
+          <div class="card border-primary">
+            <div class="card-body">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="">Nhà Trường</label>
+                    <input type="text" id="NT_TrucX" class="form-control" />
+                    <input type="text" id="NT_TrucY" class="form-control" />
+                  </div>
+                  <div class="col-4 mt-3">
+                    <div class="row">
+                      <div class="col-2"><label for="">SV1</label></div>
+                      <div class="col-10">
+                        <input type="text" id="TenSV1" class="form-control" />
+                      </div>
+                    </div>
+                    <input type="text" id="SV1_TrucX" class="form-control" />
+                    <input type="text" id="SV1_TrucY" class="form-control" />
+                  </div>
+                  <div class="col-4 mt-3">
+                    <div class="row">
+                      <div class="col-2"><label for="">SV2</label></div>
+                      <div class="col-10">
+                        <input type="text" id="TenSV2" class="form-control" />
+                      </div>
+                    </div>
+                    <input type="text" id="SV2_TrucX" class="form-control" />
+                    <input type="text" id="SV2_TrucY" class="form-control" />
+                  </div>
+                  <div class="col-4 mt-3">
+                    <div class="row">
+                      <div class="col-2"><label for="">SV3</label></div>
+                      <div class="col-10">
+                        <input type="text" id="TenSV3" class="form-control" />
+                      </div>
+                    </div>
+                    <input type="text" id="SV3_TrucX" class="form-control" />
+                    <input type="text" id="SV3_TrucY" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
